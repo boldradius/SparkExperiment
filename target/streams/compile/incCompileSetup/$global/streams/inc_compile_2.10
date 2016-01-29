@@ -1,0 +1,262 @@
+format version: 5
+output mode:
+1 items
+0 -> single
+output directories:
+1 items
+output dir -> /Users/FireAndBlood/Work/SparkExperiment/target/scala-2.10/classes
+compile options:
+0 items
+javac options:
+0 items
+compiler version:
+1 items
+0 -> 2.10.5
+compile order:
+1 items
+0 -> Mixed
+name hashing:
+1 items
+0 -> true
+products:
+18 items
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> /Users/FireAndBlood/Work/SparkExperiment/target/scala-2.10/classes/Main$$anonfun$1.class
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> /Users/FireAndBlood/Work/SparkExperiment/target/scala-2.10/classes/Main$$anonfun$10.class
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> /Users/FireAndBlood/Work/SparkExperiment/target/scala-2.10/classes/Main$$anonfun$2.class
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> /Users/FireAndBlood/Work/SparkExperiment/target/scala-2.10/classes/Main$$anonfun$3.class
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> /Users/FireAndBlood/Work/SparkExperiment/target/scala-2.10/classes/Main$$anonfun$4$$anonfun$apply$1.class
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> /Users/FireAndBlood/Work/SparkExperiment/target/scala-2.10/classes/Main$$anonfun$4.class
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> /Users/FireAndBlood/Work/SparkExperiment/target/scala-2.10/classes/Main$$anonfun$5.class
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> /Users/FireAndBlood/Work/SparkExperiment/target/scala-2.10/classes/Main$$anonfun$6.class
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> /Users/FireAndBlood/Work/SparkExperiment/target/scala-2.10/classes/Main$$anonfun$8.class
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> /Users/FireAndBlood/Work/SparkExperiment/target/scala-2.10/classes/Main$$anonfun$9.class
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> /Users/FireAndBlood/Work/SparkExperiment/target/scala-2.10/classes/Main$$anonfun$InvertedIndexSortByWordsAndCountsWithStopWordsFiltering$1$$anonfun$7.class
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> /Users/FireAndBlood/Work/SparkExperiment/target/scala-2.10/classes/Main$$anonfun$InvertedIndexSortByWordsAndCountsWithStopWordsFiltering$1.class
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> /Users/FireAndBlood/Work/SparkExperiment/target/scala-2.10/classes/Main$.class
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> /Users/FireAndBlood/Work/SparkExperiment/target/scala-2.10/classes/Main.class
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/stopwords.scala -> /Users/FireAndBlood/Work/SparkExperiment/target/scala-2.10/classes/StopWords$.class
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/stopwords.scala -> /Users/FireAndBlood/Work/SparkExperiment/target/scala-2.10/classes/StopWords.class
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/stopwords.scala -> /Users/FireAndBlood/Work/SparkExperiment/target/scala-2.10/classes/Timestamp$.class
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/stopwords.scala -> /Users/FireAndBlood/Work/SparkExperiment/target/scala-2.10/classes/Timestamp.class
+binary dependencies:
+5 items
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib/rt.jar
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> /Users/FireAndBlood/.ivy2/cache/org.apache.spark/spark-core_2.10/jars/spark-core_2.10-1.6.0.jar
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> /Users/FireAndBlood/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.10.5.jar
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/stopwords.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib/rt.jar
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/stopwords.scala -> /Users/FireAndBlood/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.10.5.jar
+direct source dependencies:
+0 items
+direct external dependencies:
+0 items
+public inherited source dependencies:
+0 items
+public inherited external dependencies:
+0 items
+member reference internal dependencies:
+1 items
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> /Users/FireAndBlood/Work/SparkExperiment/src/main/scala/stopwords.scala
+member reference external dependencies:
+0 items
+inheritance internal dependencies:
+0 items
+inheritance external dependencies:
+0 items
+class names:
+18 items
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> Main
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> Main$
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> Main$$anonfun$1
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> Main$$anonfun$10
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> Main$$anonfun$2
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> Main$$anonfun$3
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> Main$$anonfun$4
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> Main$$anonfun$4$$anonfun$apply$1
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> Main$$anonfun$5
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> Main$$anonfun$6
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> Main$$anonfun$8
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> Main$$anonfun$9
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> Main$$anonfun$InvertedIndexSortByWordsAndCountsWithStopWordsFiltering$1
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> Main$$anonfun$InvertedIndexSortByWordsAndCountsWithStopWordsFiltering$1$$anonfun$7
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/stopwords.scala -> StopWords
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/stopwords.scala -> StopWords$
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/stopwords.scala -> Timestamp
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/stopwords.scala -> Timestamp$
+used names:
+125 items
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> !=
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> &&
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> +
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> <init>
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> ==
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> AnyRef
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> Array
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> Broadcast
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> ClassTag
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> Console
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> Int
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> InvertedIndexSortByWordsAndCountsWithStopWordsFiltering
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> Main
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> Map
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> None
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> Ordering
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> Predef
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> RDD
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> Regex
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> Set
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> SparkConf
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> SparkContext
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> StopWords
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> String
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> StringContext
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> Timestamp
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> Tuple2
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> Unit
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> _1
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> _2
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> apache
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> apply
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> argz
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> augmentString
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> broadcast
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> canBuildFrom
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> contains
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> count1
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> count2
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> err
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> filter
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> findFirstIn
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> flatMap
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> get
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> groupByKey
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> input
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> inputHam
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> inputSpam
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> isEmpty
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> iterable
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> lengthCompare
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> lineRE
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> map
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> mapValues
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> matching
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> materializeClassTag
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> math
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> mkString
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> n
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> name
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> ne
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> now
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> numbersRE
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> org
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> out
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> package
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> path
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> println
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> qual$1
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> r
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> rdd
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> rddToOrderedRDDFunctions
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> rddToPairRDDFunctions
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> reduceByKey
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> refArrayOps
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> s
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> saveAsTextFile
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> sc
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> scConf
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> scala
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> seq2
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> setAppName
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> setMaster
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> sortBy
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> sortByKey
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> spark
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> split
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> stop
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> stopWords
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> text
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> textFile
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> toLowerCase
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> toVector
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> trim
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> unapplySeq
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> unary_!
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> unary_-
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> union
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> util
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> value
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> wc
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> word
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> wordCountHamAndSpam
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> words
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> x$6
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> x$7
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/stopwords.scala -> <init>
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/stopwords.scala -> AnyRef
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/stopwords.scala -> Boolean
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/stopwords.scala -> Date
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/stopwords.scala -> Predef
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/stopwords.scala -> Set
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/stopwords.scala -> SimpleDateFormat
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/stopwords.scala -> StopWords
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/stopwords.scala -> String
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/stopwords.scala -> Timestamp
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/stopwords.scala -> apply
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/stopwords.scala -> fmt
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/stopwords.scala -> format
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/stopwords.scala -> isTest
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/stopwords.scala -> java
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/stopwords.scala -> scala
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/stopwords.scala -> text
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/stopwords.scala -> util
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/stopwords.scala -> words
+product stamps:
+18 items
+/Users/FireAndBlood/Work/SparkExperiment/target/scala-2.10/classes/Main$$anonfun$1.class -> lastModified(1454103630000)
+/Users/FireAndBlood/Work/SparkExperiment/target/scala-2.10/classes/Main$$anonfun$10.class -> lastModified(1454103630000)
+/Users/FireAndBlood/Work/SparkExperiment/target/scala-2.10/classes/Main$$anonfun$2.class -> lastModified(1454103630000)
+/Users/FireAndBlood/Work/SparkExperiment/target/scala-2.10/classes/Main$$anonfun$3.class -> lastModified(1454103630000)
+/Users/FireAndBlood/Work/SparkExperiment/target/scala-2.10/classes/Main$$anonfun$4$$anonfun$apply$1.class -> lastModified(1454103630000)
+/Users/FireAndBlood/Work/SparkExperiment/target/scala-2.10/classes/Main$$anonfun$4.class -> lastModified(1454103630000)
+/Users/FireAndBlood/Work/SparkExperiment/target/scala-2.10/classes/Main$$anonfun$5.class -> lastModified(1454103630000)
+/Users/FireAndBlood/Work/SparkExperiment/target/scala-2.10/classes/Main$$anonfun$6.class -> lastModified(1454103630000)
+/Users/FireAndBlood/Work/SparkExperiment/target/scala-2.10/classes/Main$$anonfun$8.class -> lastModified(1454103630000)
+/Users/FireAndBlood/Work/SparkExperiment/target/scala-2.10/classes/Main$$anonfun$9.class -> lastModified(1454103630000)
+/Users/FireAndBlood/Work/SparkExperiment/target/scala-2.10/classes/Main$$anonfun$InvertedIndexSortByWordsAndCountsWithStopWordsFiltering$1$$anonfun$7.class -> lastModified(1454103630000)
+/Users/FireAndBlood/Work/SparkExperiment/target/scala-2.10/classes/Main$$anonfun$InvertedIndexSortByWordsAndCountsWithStopWordsFiltering$1.class -> lastModified(1454103630000)
+/Users/FireAndBlood/Work/SparkExperiment/target/scala-2.10/classes/Main$.class -> lastModified(1454103630000)
+/Users/FireAndBlood/Work/SparkExperiment/target/scala-2.10/classes/Main.class -> lastModified(1454103630000)
+/Users/FireAndBlood/Work/SparkExperiment/target/scala-2.10/classes/StopWords$.class -> lastModified(1454103630000)
+/Users/FireAndBlood/Work/SparkExperiment/target/scala-2.10/classes/StopWords.class -> lastModified(1454103630000)
+/Users/FireAndBlood/Work/SparkExperiment/target/scala-2.10/classes/Timestamp$.class -> lastModified(1454103630000)
+/Users/FireAndBlood/Work/SparkExperiment/target/scala-2.10/classes/Timestamp.class -> lastModified(1454103630000)
+source stamps:
+2 items
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> hash(0146f6e01fd7a04f75462c0ad9de1c4dc02601fa)
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/stopwords.scala -> hash(8cfad7fa209553a09b6f45fc1e99d51b30cef9fe)
+binary stamps:
+3 items
+/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib/rt.jar -> lastModified(1425766379000)
+/Users/FireAndBlood/.ivy2/cache/org.apache.spark/spark-core_2.10/jars/spark-core_2.10-1.6.0.jar -> lastModified(1450755479000)
+/Users/FireAndBlood/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.10.5.jar -> lastModified(1425002069000)
+class names:
+3 items
+/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib/rt.jar -> java.lang.Object
+/Users/FireAndBlood/.ivy2/cache/org.apache.spark/spark-core_2.10/jars/spark-core_2.10-1.6.0.jar -> org.apache.spark.rdd.RDD
+/Users/FireAndBlood/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.10.5.jar -> scala.Unit
+internal apis:
+2 items
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHBbWk8fAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAF3NyACB4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaFsO9SJ2OFfPAgACSQAEaGFzaEwABG5hbWV0ABJMamF2YS9sYW5nL1N0cmluZzt4cPbjxQZ0AAZub3RpZnlzcQB+AAxOTUcbdAAEd2FpdHNxAH4ADGBKIyZ0AA0kYXNJbnN0YW5jZU9mc3EAfgAMogLr93QABmVxdWFsc3NxAH4ADIt3LQh0AAxhc0luc3RhbmNlT2ZzcQB+AAxIJtIodAAMc3luY2hyb25pemVkc3EAfgAMEvrNp3QADSRpc0luc3RhbmNlT2ZzcQB+AAwgch6MdAAEbWFpbnNxAH4ADF0q7PN0AAlub3RpZnlBbGxzcQB+AAyoh3JZdAAMaXNJbnN0YW5jZU9mc3EAfgAMozui9XQAE3dvcmRDb3VudEhhbUFuZFNwYW1zcQB+AAxFUAyWdAACPT1zcQB+AAwx2KWWdAAFY2xvbmVzcQB+AAwLaVSLdAAETWFpbnNxAH4ADCnaold0AAh0b1N0cmluZ3NxAH4ADGwF7N10AAIhPXNxAH4ADPaO9rp0AAhnZXRDbGFzc3NxAH4ADNNLRrB0AAJuZXNxAH4ADP/Rprx0AAJlcXNxAH4ADJpInB10ADdJbnZlcnRlZEluZGV4U29ydEJ5V29yZHNBbmRDb3VudHNXaXRoU3RvcFdvcmRzRmlsdGVyaW5nc3EAfgAMdYe8gnQAAiMjc3EAfgAMDOt+n3QACGZpbmFsaXplc3EAfgAM1PBKR3QACGhhc2hDb2Rlc3IAE3hzYnRpLmFwaS5Tb3VyY2VBUEm5Xqf5KSM4pAIAAlsAC2RlZmluaXRpb25zdAAXW0x4c2J0aS9hcGkvRGVmaW5pdGlvbjtbAAhwYWNrYWdlc3QAFFtMeHNidGkvYXBpL1BhY2thZ2U7eHB1cgAXW0x4c2J0aS5hcGkuRGVmaW5pdGlvbjuIyVzntONeDgIAAHhwAAAAAXNyABN4c2J0aS5hcGkuQ2xhc3NMaWtlgzQcod+wl2wCAARMAA5kZWZpbml0aW9uVHlwZXQAGkx4c2J0aS9hcGkvRGVmaW5pdGlvblR5cGU7WwAQc2F2ZWRBbm5vdGF0aW9uc3QAE1tMamF2YS9sYW5nL1N0cmluZztMAAhzZWxmVHlwZXQAEEx4c2J0aS9hcGkvTGF6eTtMAAlzdHJ1Y3R1cmVxAH4ARXhyACF4c2J0aS5hcGkuUGFyYW1ldGVyaXplZERlZmluaXRpb275EW6x1VA84gIAAVsADnR5cGVQYXJhbWV0ZXJzdAAaW0x4c2J0aS9hcGkvVHlwZVBhcmFtZXRlcjt4cgAUeHNidGkuYXBpLkRlZmluaXRpb26HKhvocULjRgIABEwABmFjY2Vzc3QAEkx4c2J0aS9hcGkvQWNjZXNzO1sAC2Fubm90YXRpb25zdAAXW0x4c2J0aS9hcGkvQW5ub3RhdGlvbjtMAAltb2RpZmllcnN0ABVMeHNidGkvYXBpL01vZGlmaWVycztMAARuYW1lcQB+AA14cHNyABB4c2J0aS5hcGkuUHVibGljulg9rmwtYEICAAB4cgAQeHNidGkuYXBpLkFjY2Vzc91imvgdYzFIAgAAeHB1cgAXW0x4c2J0aS5hcGkuQW5ub3RhdGlvbjvrl+sZEPaNSAIAAHhwAAAAAHNyABN4c2J0aS5hcGkuTW9kaWZpZXJzxxETIWmc3CQCAAFCAAVmbGFnc3hwAHEAfgApdXIAGltMeHNidGkuYXBpLlR5cGVQYXJhbWV0ZXI72W0mDyid8rYCAAB4cAAAAAB+cgAYeHNidGkuYXBpLkRlZmluaXRpb25UeXBlAAAAAAAAAAASAAB4cgAOamF2YS5sYW5nLkVudW0AAAAAAAAAABIAAHhwdAAGTW9kdWxldXIAE1tMamF2YS5sYW5nLlN0cmluZzut0lbn6R17RwIAAHhwAAAAAHNyABN4c2J0aS5TYWZlTGF6eSRJbXBsUAIuk5eXQD8CAANaAAhiaXRtYXAkMEwAAl90dAASTGphdmEvbGFuZy9PYmplY3Q7TAAEZXZhbHQAEUxzY2FsYS9GdW5jdGlvbjA7eHIAFnhzYnRpLmFwaS5BYnN0cmFjdExhennTd7UBX7vnoAIAAHhwAHBzcgAgeHNidGkuU2FmZUxhenkkJGFub25mdW4kc3RyaWN0JDEAAAAAAAAAAAIAAUwAB3ZhbHVlJDFxAH4AXXhwc3IAE3hzYnRpLmFwaS5FbXB0eVR5cGW8/Z5GSTuJJAIAAHhyABR4c2J0aS5hcGkuU2ltcGxlVHlwZXJ4YoghI79AAgAAeHIADnhzYnRpLmFwaS5UeXBlP2rZIRZJqsoCAAB4cHNxAH4AXABwc3EAfgBhc3IAE3hzYnRpLmFwaS5TdHJ1Y3R1cmWpqvmAk2/YAAIAA0wACGRlY2xhcmVkcQB+AEVMAAlpbmhlcml0ZWRxAH4ARUwAB3BhcmVudHNxAH4ARXhxAH4AZXNxAH4AXABwc3EAfgBhdXEAfgBAAAAAAXNyAA14c2J0aS5hcGkuRGVmUr6f4ny0NmkCAAJMAApyZXR1cm5UeXBldAAQTHhzYnRpL2FwaS9UeXBlO1sAD3ZhbHVlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1BhcmFtZXRlckxpc3Q7eHEAfgBGcQB+AE91cQB+AFAAAAAAc3EAfgBSAHEAfgAddXEAfgBUAAAAAHNyABR4c2J0aS5hcGkuUHJvamVjdGlvbvPSjVTpRaQtAgACTAACaWRxAH4ADUwABnByZWZpeHQAFkx4c2J0aS9hcGkvU2ltcGxlVHlwZTt4cQB+AGR0AARVbml0c3IAE3hzYnRpLmFwaS5TaW5nbGV0b278p1/4z1bkRgIAAUwABHBhdGh0ABBMeHNidGkvYXBpL1BhdGg7eHEAfgBkc3IADnhzYnRpLmFwaS5QYXRomz1cCM6lJ4QCAAFbAApjb21wb25lbnRzdAAaW0x4c2J0aS9hcGkvUGF0aENvbXBvbmVudDt4cHVyABpbTHhzYnRpLmFwaS5QYXRoQ29tcG9uZW50O0PaCXQtZxZ0AgAAeHAAAAACc3IADHhzYnRpLmFwaS5JZJgybIs3U8RAAgABTAACaWRxAH4ADXhyABd4c2J0aS5hcGkuUGF0aENvbXBvbmVudF+aIlsuhp+8AgAAeHB0AAVzY2FsYXNyAA54c2J0aS5hcGkuVGhpc9sJ7abMWkBcAgAAeHEAfgCCdXIAGltMeHNidGkuYXBpLlBhcmFtZXRlckxpc3Q79dM6HfKzcO4CAAB4cAAAAAFzcgAXeHNidGkuYXBpLlBhcmFtZXRlckxpc3TWxbwcZEl04wIAAloACmlzSW1wbGljaXRbAApwYXJhbWV0ZXJzdAAcW0x4c2J0aS9hcGkvTWV0aG9kUGFyYW1ldGVyO3hwAHVyABxbTHhzYnRpLmFwaS5NZXRob2RQYXJhbWV0ZXI7z7jFXaXdtW0CAAB4cAAAAAFzcgAZeHNidGkuYXBpLk1ldGhvZFBhcmFtZXRlch9FrhfTSbDqAgAEWgAKaGFzRGVmYXVsdEwACG1vZGlmaWVydAAdTHhzYnRpL2FwaS9QYXJhbWV0ZXJNb2RpZmllcjtMAARuYW1lcQB+AA1MAAN0cGVxAH4Ab3hwAH5yABt4c2J0aS5hcGkuUGFyYW1ldGVyTW9kaWZpZXIAAAAAAAAAABIAAHhxAH4AV3QABVBsYWludAAEYXJnc3NyABd4c2J0aS5hcGkuUGFyYW1ldGVyaXplZBZs7mkDybt/AgACTAAIYmFzZVR5cGVxAH4AdlsADXR5cGVBcmd1bWVudHN0ABFbTHhzYnRpL2FwaS9UeXBlO3hxAH4AZHNxAH4AdXQABUFycmF5cQB+AHt1cgARW0x4c2J0aS5hcGkuVHlwZTt0/6Vae/npQQIAAHhwAAAAAXNxAH4AdXQABlN0cmluZ3NxAH4AeXNxAH4AfHVxAH4AfwAAAANzcQB+AIF0AARqYXZhc3EAfgCBdAAEbGFuZ3EAfgCGc3EAfgBcAHBzcQB+AGF1cQB+AEAAAAAAc3EAfgBcAHBzcQB+AGF1cQB+AJoAAAACc3EAfgB1dAAGT2JqZWN0cQB+AJ5zcQB+AHV0AANBbnlxAH4Ae3VyABRbTHhzYnRpLmFwaS5QYWNrYWdlO1sTGTdwpyehAgAAeHAAAAAAc3IAFXhzYnRpLmFwaS5Db21waWxhdGlvbu364MNq6KBCAgACSgAJc3RhcnRUaW1lWwAHb3V0cHV0c3QAGltMeHNidGkvYXBpL091dHB1dFNldHRpbmc7eHAAAAFSj1R0FnVyABpbTHhzYnRpLmFwaS5PdXRwdXRTZXR0aW5nO39qwvOnh6VCAgAAeHAAAAABc3IAF3hzYnRpLmFwaS5PdXRwdXRTZXR0aW5netmaR3T7HXsCAAJMAA9vdXRwdXREaXJlY3RvcnlxAH4ADUwAD3NvdXJjZURpcmVjdG9yeXEAfgANeHB0AEIvVXNlcnMvRmlyZUFuZEJsb29kL1dvcmsvU3BhcmtFeHBlcmltZW50L3RhcmdldC9zY2FsYS0yLjEwL2NsYXNzZXN0AAEvdXIAAltCrPMX+AYIVOACAAB4cAAAABQBRvbgH9egT3VGLArZ3hxNwCYB+g==
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/stopwords.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHBisI6AAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAGXNyACB4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaFsO9SJ2OFfPAgACSQAEaGFzaEwABG5hbWV0ABJMamF2YS9sYW5nL1N0cmluZzt4cL8NREF0AAZub3RpZnlzcQB+AAztlwAadAAJU3RvcFdvcmRzc3EAfgAMhoEztnQABHdhaXRzcQB+AAywGRwcdAANJGFzSW5zdGFuY2VPZnNxAH4ADBzo5QR0AAZlcXVhbHNzcQB+AAzCkMQAdAAMYXNJbnN0YW5jZU9mc3EAfgAMYyoW83QADHN5bmNocm9uaXplZHNxAH4ADAlrQlp0AA0kaXNJbnN0YW5jZU9mc3EAfgAMCXBwnnQACW5vdGlmeUFsbHNxAH4ADKq7P1Z0AANub3dzcQB+AAymohFpdAAMaXNJbnN0YW5jZU9mc3EAfgAMQ1NBCnQAAj09c3EAfgAMrldV0HQABmlzVGVzdHNxAH4ADAcjviR0AAVjbG9uZXNxAH4ADCXONBt0AAlUaW1lc3RhbXBzcQB+AAwHstKQdAAFd29yZHNzcQB+AAxDeOokdAAIdG9TdHJpbmdzcQB+AAwHzWZLdAACIT1zcQB+AAyeuPl3dAADZm10c3EAfgAMzuI2o3QACGdldENsYXNzc3EAfgAM8cddXXQAAm5lc3EAfgAMK0GBZnQAAmVxc3EAfgAM/wG4q3QAAiMjc3EAfgAMfhO14HQACGZpbmFsaXplc3EAfgAMSexnlHQACGhhc2hDb2Rlc3IAE3hzYnRpLmFwaS5Tb3VyY2VBUEm5Xqf5KSM4pAIAAlsAC2RlZmluaXRpb25zdAAXW0x4c2J0aS9hcGkvRGVmaW5pdGlvbjtbAAhwYWNrYWdlc3QAFFtMeHNidGkvYXBpL1BhY2thZ2U7eHB1cgAXW0x4c2J0aS5hcGkuRGVmaW5pdGlvbjuIyVzntONeDgIAAHhwAAAAAnNyABN4c2J0aS5hcGkuQ2xhc3NMaWtlgzQcod+wl2wCAARMAA5kZWZpbml0aW9uVHlwZXQAGkx4c2J0aS9hcGkvRGVmaW5pdGlvblR5cGU7WwAQc2F2ZWRBbm5vdGF0aW9uc3QAE1tMamF2YS9sYW5nL1N0cmluZztMAAhzZWxmVHlwZXQAEEx4c2J0aS9hcGkvTGF6eTtMAAlzdHJ1Y3R1cmVxAH4ASXhyACF4c2J0aS5hcGkuUGFyYW1ldGVyaXplZERlZmluaXRpb275EW6x1VA84gIAAVsADnR5cGVQYXJhbWV0ZXJzdAAaW0x4c2J0aS9hcGkvVHlwZVBhcmFtZXRlcjt4cgAUeHNidGkuYXBpLkRlZmluaXRpb26HKhvocULjRgIABEwABmFjY2Vzc3QAEkx4c2J0aS9hcGkvQWNjZXNzO1sAC2Fubm90YXRpb25zdAAXW0x4c2J0aS9hcGkvQW5ub3RhdGlvbjtMAAltb2RpZmllcnN0ABVMeHNidGkvYXBpL01vZGlmaWVycztMAARuYW1lcQB+AA14cHNyABB4c2J0aS5hcGkuUHVibGljulg9rmwtYEICAAB4cgAQeHNidGkuYXBpLkFjY2Vzc91imvgdYzFIAgAAeHB1cgAXW0x4c2J0aS5hcGkuQW5ub3RhdGlvbjvrl+sZEPaNSAIAAHhwAAAAAHNyABN4c2J0aS5hcGkuTW9kaWZpZXJzxxETIWmc3CQCAAFCAAVmbGFnc3hwAHEAfgArdXIAGltMeHNidGkuYXBpLlR5cGVQYXJhbWV0ZXI72W0mDyid8rYCAAB4cAAAAAB+cgAYeHNidGkuYXBpLkRlZmluaXRpb25UeXBlAAAAAAAAAAASAAB4cgAOamF2YS5sYW5nLkVudW0AAAAAAAAAABIAAHhwdAAGTW9kdWxldXIAE1tMamF2YS5sYW5nLlN0cmluZzut0lbn6R17RwIAAHhwAAAAAHNyABN4c2J0aS5TYWZlTGF6eSRJbXBsUAIuk5eXQD8CAANaAAhiaXRtYXAkMEwAAl90dAASTGphdmEvbGFuZy9PYmplY3Q7TAAEZXZhbHQAEUxzY2FsYS9GdW5jdGlvbjA7eHIAFnhzYnRpLmFwaS5BYnN0cmFjdExhennTd7UBX7vnoAIAAHhwAHBzcgAgeHNidGkuU2FmZUxhenkkJGFub25mdW4kc3RyaWN0JDEAAAAAAAAAAAIAAUwAB3ZhbHVlJDFxAH4AYXhwc3IAE3hzYnRpLmFwaS5FbXB0eVR5cGW8/Z5GSTuJJAIAAHhyABR4c2J0aS5hcGkuU2ltcGxlVHlwZXJ4YoghI79AAgAAeHIADnhzYnRpLmFwaS5UeXBlP2rZIRZJqsoCAAB4cHNxAH4AYABwc3EAfgBlc3IAE3hzYnRpLmFwaS5TdHJ1Y3R1cmWpqvmAk2/YAAIAA0wACGRlY2xhcmVkcQB+AElMAAlpbmhlcml0ZWRxAH4ASUwAB3BhcmVudHNxAH4ASXhxAH4AaXNxAH4AYABwc3EAfgBldXEAfgBEAAAAAHNxAH4AYABwc3EAfgBldXEAfgBEAAAAAHNxAH4AYABwc3EAfgBldXIAEVtMeHNidGkuYXBpLlR5cGU7dP+lWnv56UECAAB4cAAAAAJzcgAUeHNidGkuYXBpLlByb2plY3Rpb27z0o1U6UWkLQIAAkwAAmlkcQB+AA1MAAZwcmVmaXh0ABZMeHNidGkvYXBpL1NpbXBsZVR5cGU7eHEAfgBodAAGT2JqZWN0c3IAE3hzYnRpLmFwaS5TaW5nbGV0b278p1/4z1bkRgIAAUwABHBhdGh0ABBMeHNidGkvYXBpL1BhdGg7eHEAfgBoc3IADnhzYnRpLmFwaS5QYXRomz1cCM6lJ4QCAAFbAApjb21wb25lbnRzdAAaW0x4c2J0aS9hcGkvUGF0aENvbXBvbmVudDt4cHVyABpbTHhzYnRpLmFwaS5QYXRoQ29tcG9uZW50O0PaCXQtZxZ0AgAAeHAAAAADc3IADHhzYnRpLmFwaS5JZJgybIs3U8RAAgABTAACaWRxAH4ADXhyABd4c2J0aS5hcGkuUGF0aENvbXBvbmVudF+aIlsuhp+8AgAAeHB0AARqYXZhc3EAfgCFdAAEbGFuZ3NyAA54c2J0aS5hcGkuVGhpc9sJ7abMWkBcAgAAeHEAfgCGc3EAfgB5dAADQW55c3EAfgB9c3EAfgCAdXEAfgCDAAAAAnNxAH4AhXQABXNjYWxhcQB+AIxzcQB+AEZxAH4AU3VxAH4AVAAAAABzcQB+AFYAcQB+ABF1cQB+AFgAAAAAcQB+AFx1cQB+AF4AAAAAc3EAfgBgAHBzcQB+AGVxAH4AanNxAH4AYABwc3EAfgBlc3EAfgBtc3EAfgBgAHBzcQB+AGV1cQB+AEQAAAAAc3EAfgBgAHBzcQB+AGV1cQB+AEQAAAAAc3EAfgBgAHBzcQB+AGV1cQB+AHcAAAACc3EAfgB5cQB+AHxzcQB+AH1zcQB+AIB1cQB+AIMAAAADc3EAfgCFcQB+AIhzcQB+AIVxAH4AinEAfgCMc3EAfgB5cQB+AI5zcQB+AH1zcQB+AIB1cQB+AIMAAAACc3EAfgCFcQB+AJNxAH4AjHVyABRbTHhzYnRpLmFwaS5QYWNrYWdlO1sTGTdwpyehAgAAeHAAAAAAc3IAFXhzYnRpLmFwaS5Db21waWxhdGlvbu364MNq6KBCAgACSgAJc3RhcnRUaW1lWwAHb3V0cHV0c3QAGltMeHNidGkvYXBpL091dHB1dFNldHRpbmc7eHAAAAFSj1R0FnVyABpbTHhzYnRpLmFwaS5PdXRwdXRTZXR0aW5nO39qwvOnh6VCAgAAeHAAAAABc3IAF3hzYnRpLmFwaS5PdXRwdXRTZXR0aW5netmaR3T7HXsCAAJMAA9vdXRwdXREaXJlY3RvcnlxAH4ADUwAD3NvdXJjZURpcmVjdG9yeXEAfgANeHB0AEIvVXNlcnMvRmlyZUFuZEJsb29kL1dvcmsvU3BhcmtFeHBlcmltZW50L3RhcmdldC9zY2FsYS0yLjEwL2NsYXNzZXN0AAEvdXIAAltCrPMX+AYIVOACAAB4cAAAABSM+tf6IJVToJtvRfwemdUbMM75/g==
+external apis:
+0 items
+source infos:
+2 items
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/Main.scala -> 
+AAAAAAAAAAA=
+/Users/FireAndBlood/Work/SparkExperiment/src/main/scala/stopwords.scala -> 
+AAAAAAAAAAA=
+compilations:
+1 items
+0 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABUo9UdBZ1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAQi9Vc2Vycy9GaXJlQW5kQmxvb2QvV29yay9TcGFya0V4cGVyaW1lbnQvdGFyZ2V0L3NjYWxhLTIuMTAvY2xhc3Nlc3QAAS8=

@@ -12,14 +12,14 @@ object Main {
     val scConf = new SparkConf(true).setMaster("local").setAppName("experiment")
     implicit val sc = new SparkContext( scConf)
 
-    val argz = Map("input-path" -> "data/crawl",
-                "output-path" -> "output/inverted-index-sorted-stop-words-removed"
-                )
+    val argz = Map(("input-path", "file://user/root/data/crawl"),
+      ("output-path", "output/inverted-index-sorted-stop-words-removed"))
 
     wordCountHamAndSpam
     InvertedIndexSortByWordsAndCountsWithStopWordsFiltering(argz)
 
     //wait
+    //wait(10000)
     sc.stop()
   }
 
@@ -90,8 +90,8 @@ object Main {
     val now = Timestamp.now()
     val out = s"output/wc-local-star-$now"
 
-    val inputHam  = sc.textFile("data/enron-spam-ham/ham100")
-    val inputSpam = sc.textFile("data/enron-spam-ham/spam100")
+    val inputHam  = sc.textFile("file://user/root/data/enron-spam-ham/ham100")
+    val inputSpam = sc.textFile("file://user/root/data/enron-spam-ham/spam100")
     val wc = inputHam.union(inputSpam).
       map(_.toLowerCase).
       flatMap(_.split("""\W+""")).

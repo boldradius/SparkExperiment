@@ -5,3 +5,11 @@ run
 assembly
 package
 run
+sbt assembly
+quit
+exit
+build
+tasks
+package
+run
+package
