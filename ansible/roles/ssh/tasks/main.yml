@@ -1,0 +1,22 @@
+#These commands set SSH up so that we can ssh localhost without pw
+ - name: Generate ssh key if not already there - may spit out errors and continue if the key already exists
+   command: timeout 5s ssh-keygen -t dsa -N '' -f ~/.ssh/id_dsa
+   ignore_errors: yes
+
+ - name: Copy local public key to local authorized keys - to enable passwordless ssh to localhost
+   command: cat ~/.ssh/id_dsa.pub
+   register: public_key
+
+ - lineinfile: dest=~/.ssh/authorized_keys insertafter=EOF line="{{public_key.stdout}}"
+
+ - name: Change permissions of authorized keys
+   command: chmod 0600 ~/.ssh/authorized_keys
+
+ - file: path=~/.ssh/config state=touch
+
+ - name: Set localhost to not check known_hosts (avoids prompts in later commands)
+   lineinfile: dest=~/.ssh/config insertafter=EOF line="{{item}}"
+   with_items:
+    - Host localhost
+    - \tStrictHostKeyChecking no
+    - \tUserKnownHostsFile=/dev/null

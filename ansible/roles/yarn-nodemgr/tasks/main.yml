@@ -1,0 +1,2 @@
+- name: Launch Yarn Node Manager
+  command: "{{hadoop_home}}/sbin/yarn-daemons.sh --config {{hadoop_conf_dir}}  start nodemanager"

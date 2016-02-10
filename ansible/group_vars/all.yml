@@ -1,0 +1,13 @@
+---
+# file: group_vars/all
+home_dir: "~"
+java_home: "/usr/lib/jvm/java-8-oracle"
+spark_home: "{{home_dir}}/spark-1.6.0-bin-hadoop2.6"
+spark_download: http://apache.mirror.gtcomm.net/spark/spark-1.6.0/spark-1.6.0-bin-hadoop2.6.tgz
+spark_master_port: 7077
+spark_slave_port: 8081
+spark_history_dir: file:/tmp/spark-events
+
+hadoop_download: http://apache.mirror.gtcomm.net/hadoop/common/hadoop-2.6.0/hadoop-2.6.0.tar.gz
+hadoop_home: "{{home_dir}}/hadoop-2.6.0"
+hadoop_conf_dir: "{{hadoop_home}}/etc/hadoop"

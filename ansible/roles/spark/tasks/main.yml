@@ -1,0 +1,5 @@
+- name: download spark
+  get_url: url="{{spark_download}}"  dest="{{spark_home}}.tgz"
+
+- name: unzip spark
+  unarchive: copy=no src="{{spark_home}}.tgz"  dest={{home_dir}}

@@ -1,0 +1,9 @@
+master ansible_ssh_host=208.75.74.191 internal_ip=10.0.163.3 ansible_ssh_private_key_file=~/.ssh/sparkexperiment.pem
+
+[workers]
+208.75.74.217 internal_ip=10.0.163.4 ansible_ssh_private_key_file=~/.ssh/sparkexperiment.pem
+208.75.74.226 internal_ip=10.0.163.5 ansible_ssh_private_key_file=~/.ssh/sparkexperiment.pem
+208.75.74.145	internal_ip=10.0.163.6 ansible_ssh_private_key_file=~/.ssh/sparkexperiment.pem
+
+[hdfs]
+208.75.74.145	internal_ip=10.0.163.6 ansible_ssh_private_key_file=~/.ssh/sparkexperiment.pem

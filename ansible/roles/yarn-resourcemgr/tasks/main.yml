@@ -1,0 +1,5 @@
+- name: Stop Yarn Resource Manager if Started
+  command: "{{hadoop_home}}/sbin/yarn-daemon.sh --config {{hadoop_conf_dir}} stop resourcemanager"
+
+- name: Launch Yarn Resource Manager
+  command: "{{hadoop_home}}/sbin/yarn-daemon.sh --config {{hadoop_conf_dir}} start resourcemanager"
