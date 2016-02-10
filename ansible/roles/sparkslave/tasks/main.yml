@@ -1,0 +1,12 @@
+---
+- name: Creates spark-events directory
+  file: path=/tmp/spark-events state=directory
+
+- name: Stop Spark Slave
+  command: "{{spark_home}}/sbin/stop-slave.sh"
+
+- name: Wait for slave to stop
+  pause: seconds=10
+
+- name: Launch Spark Slave
+  command: "{{spark_home}}/sbin/start-slave.sh spark://{{master_ip}}:{{spark_master_port}}"

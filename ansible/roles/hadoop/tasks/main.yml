@@ -1,0 +1,52 @@
+#This sets up HDFS to run in pseudo distributed mode (multiple JVM processes on one node)
+
+- name: Install rysnc if not present
+  apt: name=rsync state=present
+
+- name: download hadoop
+  get_url: url="{{hadoop_download}}"  dest="{{hadoop_home}}.tar.gz"
+
+- name: unzip hadoop
+  unarchive: copy=no src="{{hadoop_home}}.tar.gz"  dest={{home_dir}}
+
+- name: Set hadoop environment variables
+  lineinfile: dest=~/.profile line="{{item}}" insertafter=EOF
+  with_items:
+   - "### HADOOP Variables ###"
+   - "export HADOOP_HOME={{hadoop_home}}"
+   - "export HADOOP_INSTALL=$HADOOP_HOME"
+   - "export HADOOP_MAPRED_HOME=$HADOOP_HOME"
+   - "export HADOOP_COMMON_HOME=$HADOOP_HOME"
+   - "export HADOOP_HDFS_HOME=$HADOOP_HOME"
+   - "export YARN_HOME=$HADOOP_HOME"
+   - "export HADOOP_COMMON_LIB_NATIVE_DIR=$HADOOP_HOME/lib/native"
+   - "export PATH=$PATH:$HADOOP_HOME/sbin:$HADOOP_HOME/bin"
+   - "export HADOOP_CONF_DIR=$HADOOP_HOME/etc/hadoop"
+   - "export YARN_CONF_DIR=$HADOOP_HOME/etc/hadoop"
+
+##- name: Creates hadoop storage directories
+##  file: path="{{item}}" state=directory
+##  with_items:
+##   - ~/data/hadoop-data/nn
+##   - ~/data/hadoop-data/snn
+##   - ~/data/hadoop-data/dn
+##   - ~/data/hadoop-data/mapred/system
+##   - ~/data/hadoop-data/mapred/local
+#
+- name: Set JAVA_HOME in Hadoop configuration file
+  replace: dest="{{hadoop_home}}/etc/hadoop/hadoop-env.sh" regexp='\${JAVA_HOME}' replace={{java_home}}
+
+- name: Setup core-site.xml file
+  copy: src=core-site.xml dest="{{hadoop_home}}/etc/hadoop/core-site.xml" force=yes
+
+- name: Set master hostname in core-site.xml
+  replace: dest="{{hadoop_home}}/etc/hadoop/core-site.xml" regexp='masterhost' replace="{{hostvars['master']['internal_ip']}}"
+
+- name: Setup mapred-site.xml file
+  copy: src=hdfs-site.xml dest="{{hadoop_home}}/etc/hadoop/mapred-site.xml" force=yes
+
+- name: Setup yarn-site.xml file
+  copy: src=yarn-site.xml dest="{{hadoop_home}}/etc/hadoop/yarn-site.xml" force=yes
+
+- name: Set yarnlogserver in yarn-site.xml
+  replace: dest="{{hadoop_home}}/etc/hadoop/yarn-site.xml" regexp='yarnlogserver' replace="{{hostvars['master']['internal_ip']}}"

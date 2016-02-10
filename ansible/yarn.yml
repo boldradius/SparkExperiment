@@ -1,0 +1,30 @@
+---
+# Uncomment all roles if starting from scratch, or only those needed if not starting from scratch.
+
+- hosts: master
+  roles:
+#    - ssh
+#    - java
+    - hadoop
+    - hadoop-namenode
+    - yarn-resourcemgr
+#    - spark
+#    - sparkmaster
+#      - sparkhistory
+    - mapred-history #Doesn't seem to be required
+
+
+- hosts: workers
+  roles:
+#    - ssh
+#    - java
+    - hadoop
+    - hadoop-datanode
+    - yarn-nodemgr
+#    - spark
+#    - { role: sparkslave, master_ip: "{{hostvars['master']['internal_ip']}}" }
+
+
+
+
+

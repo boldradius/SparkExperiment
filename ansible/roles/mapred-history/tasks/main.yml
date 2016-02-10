@@ -1,0 +1,5 @@
+- name: Stop MapReduce History Server daemon if already started
+  command: "{{hadoop_home}}/sbin/mr-jobhistory-daemon.sh --config {{hadoop_conf_dir}} stop historyserver"
+
+- name: Launch MapReduce History Server
+  command: "{{hadoop_home}}/sbin/mr-jobhistory-daemon.sh --config {{hadoop_conf_dir}} start historyserver"

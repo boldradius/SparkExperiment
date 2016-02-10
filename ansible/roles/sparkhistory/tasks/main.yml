@@ -1,0 +1,7 @@
+---
+- name: Stop Spark History Server
+  command: "{{spark_home}}/sbin/stop-history-server.sh"
+
+- name: Launch Spark Master
+  command: "{{spark_home}}/sbin/start-history-server.sh"
+

@@ -1,0 +1,22 @@
+---
+
+- name: Stop Spark Master if Started
+  command: "{{spark_home}}/sbin/stop-master.sh"
+
+- name: Launch Spark Master
+  command: "{{spark_home}}/sbin/start-master.sh"
+
+- name: Creates spark-events directory
+  file: path=/tmp/spark-events state=directory
+
+# The other way of starting slaves - via the Spark Scripts. Favour not doing this.
+#- name: Add slaves to conf file
+#  lineinfile: dest: "{{spark_home}}/conf/slaves" state=present line="{{hostvars[item][ansible_ssh_host]}}"
+#  with_items: groups.slaves
+#
+#
+#
+#- name: Start slaves
+#  command: "{{spark_home}}/sbin/start-slaves.sh"
+#
+

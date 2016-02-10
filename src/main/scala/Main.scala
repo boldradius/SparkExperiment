@@ -9,7 +9,7 @@ import scala.util.matching.Regex
 object Main {
   def main(args: Array[String]): Unit = {
 
-    val scConf = new SparkConf(true).setMaster("local").setAppName("experiment")
+    val scConf = new SparkConf(true).setMaster("local").setAppName("experiment").set("spark.eventLog.enabled", "true")
     implicit val sc = new SparkContext( scConf)
 
     val argz = Map(("input-path", "file://user/root/data/crawl"),
