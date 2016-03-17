@@ -1,0 +1,50 @@
+- name: Stop Zookeeper Service
+  service: name=zookeeper state=stopped
+  sudo: yes
+
+- name: Disable the ZooKeeper service
+  copy:
+    content: "manual"
+    dest: /etc/init/zookeeper.override
+    mode: 0644
+  sudo: yes
+
+- name: Stop the Mesos Master Service
+  service: name=mesos-master state=stopped
+  sudo: yes
+
+- name: Disable the Mesos Master service
+  copy:
+    content: "manual"
+    dest: /etc/init/mesos-master.override
+    mode: 0644
+  sudo: yes
+
+- name: Set Mesos Slave hostname
+  copy:
+    content: "{{ansible_eth0.ipv4.address}}"
+    dest: /etc/mesos-slave/hostname
+    mode: 0644
+  sudo: yes
+
+- name: Set Hadoop_home - necessary to fetch Spark files from HDFS
+  copy:
+    content: "{{hadoop_home}}"
+    dest: /etc/mesos-slave/hadoop_home
+    mode: 0644
+  sudo: yes
+
+
+- name: Set ZooKeeper URL # used for leader election amongst masters
+  copy:
+    content: "{{zookeeper_url}}"
+    dest: /etc/mesos/zk
+    mode: 0644
+  sudo: yes
+
+- name: Restart the Mesos Service
+  service: name=mesos-slave state=restarted
+  sudo: yes
+
+
+

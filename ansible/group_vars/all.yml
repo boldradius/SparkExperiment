@@ -4,6 +4,7 @@ home_dir: "~"
 java_home: "/usr/lib/jvm/java-8-oracle"
 spark_home: "{{home_dir}}/spark-1.6.0-bin-hadoop2.6"
 spark_download: http://apache.mirror.gtcomm.net/spark/spark-1.6.0/spark-1.6.0-bin-hadoop2.6.tgz
+spark_hdfs_location: hdfs://{{hostvars['master']['ansible_eth0']['ipv4']['address']}}:9000/tmp/spark-1.6.0-bin-hadoop2.6.tgz
 spark_master_port: 7077
 spark_slave_port: 8081
 spark_history_dir: file:/tmp/spark-events
@@ -11,3 +12,13 @@ spark_history_dir: file:/tmp/spark-events
 hadoop_download: http://apache.mirror.gtcomm.net/hadoop/common/hadoop-2.6.0/hadoop-2.6.0.tar.gz
 hadoop_home: "{{home_dir}}/hadoop-2.6.0"
 hadoop_conf_dir: "{{hadoop_home}}/etc/hadoop"
+
+mesos_repository: http://keyserver.ubuntu.com/pks/lookup?op=get&fingerprint=on&search=0xE56151BF
+#Note: Mesos Masters will not run if there are less than this many Master nodes up.
+mesos_quorum_count: "1"
+zookeeper_client_port: "2181"
+zookeeper_leader_port: "2888"
+zookeeper_election_port: "3888"
+mesos_cluster_name: "Cluster01"
+#Below is hard coded - for multiple masters need to list all applicable masters. (Ansible TBD)
+zookeeper_url: "zk://{{ hostvars['master']['ansible_eth0']['ipv4']['address']}}:{{ zookeeper_client_port }}/mesos"

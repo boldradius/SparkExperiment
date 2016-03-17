@@ -2653,7 +2653,7 @@
 [debug] 	[NOT REQUIRED] org.scala-sbt#apply-macro;0.13.8!apply-macro.jar
 [debug] 	[NOT REQUIRED] org.scala-lang#jline;2.10.4!jline.jar
 [debug] 	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar
-[debug] :: resolution report :: resolve 1168ms :: artifacts dl 46ms
+[debug] :: resolution report :: resolve 1112ms :: artifacts dl 39ms
 [debug] 	report for default#sparkexperiment-build;0.1-SNAPSHOT compile produced in /Users/jamielongmuir/code/prototypes/spark/SparkExperiment/project/target/resolution-cache/reports/default-sparkexperiment-build-compile.xml
 [debug] 	report for default#sparkexperiment-build;0.1-SNAPSHOT runtime produced in /Users/jamielongmuir/code/prototypes/spark/SparkExperiment/project/target/resolution-cache/reports/default-sparkexperiment-build-runtime.xml
 [debug] 	report for default#sparkexperiment-build;0.1-SNAPSHOT test produced in /Users/jamielongmuir/code/prototypes/spark/SparkExperiment/project/target/resolution-cache/reports/default-sparkexperiment-build-test.xml
@@ -2667,5 +2667,5 @@
 [debug] 	report for default#sparkexperiment-build;0.1-SNAPSHOT docs produced in /Users/jamielongmuir/code/prototypes/spark/SparkExperiment/project/target/resolution-cache/reports/default-sparkexperiment-build-docs.xml
 [debug] 	report for default#sparkexperiment-build;0.1-SNAPSHOT pom produced in /Users/jamielongmuir/code/prototypes/spark/SparkExperiment/project/target/resolution-cache/reports/default-sparkexperiment-build-pom.xml
 [debug] 	report for default#sparkexperiment-build;0.1-SNAPSHOT scala-tool produced in /Users/jamielongmuir/code/prototypes/spark/SparkExperiment/project/target/resolution-cache/reports/default-sparkexperiment-build-scala-tool.xml
-[debug] 	resolve done (1168ms resolve - 46ms download)
+[debug] 	resolve done (1112ms resolve - 39ms download)
 [info] Done updating.

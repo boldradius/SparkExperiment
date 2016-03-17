@@ -1,7 +1,10 @@
 ---
-
 - name: Stop Spark Master if Started
   command: "{{spark_home}}/sbin/stop-master.sh"
+
+- name: Create spark-env.sh for Mesos configuration
+  template: src=spark-env.sh.j2 dest="{{spark_home}}/conf/spark-env.sh"
+  when: isMesosMaster is defined
 
 - name: Launch Spark Master
   command: "{{spark_home}}/sbin/start-master.sh"

@@ -7,8 +7,8 @@
 - name: Launch Hadoop NameNode daemon
   command: "{{hadoop_home}}/sbin/hadoop-daemon.sh --config {{hadoop_conf_dir}} --script hdfs start namenode"
 
-#- name: Make hdfs user directory
-#  command: bin/hdfs dfs -mkdir /user chdir={{hadoop_home}}
-#
-#- name: Make hdfs directory for this user
-#  command: bin/hdfs dfs -mkdir /user/sparkexp chdir={{hadoop_home}}
+- name: Make hdfs user directory
+  command: bin/hdfs dfs -mkdir /user chdir={{hadoop_home}}
+
+- name: Make hdfs directory for this user
+  command: bin/hdfs dfs -mkdir /user/sparkexp chdir={{hadoop_home}}

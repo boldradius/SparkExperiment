@@ -1,0 +1,87 @@
+# Install Mesos Master specific applications (ZooKeeper, Marathon, Chronos) and configurations
+
+- name: Install marathon package
+  apt: pkg=marathon state=present update_cache=yes
+  sudo: yes
+
+- name: Install chronos package
+  apt: pkg=chronos state=present update_cache=yes
+  sudo: yes
+
+- name: Set Mesos Master hostname
+  copy:
+    content: "{{ansible_eth0.ipv4.address}}"
+    dest: /etc/mesos-master/hostname
+    mode: 0644
+  sudo: yes
+
+- name: Create Marathon configuration directory because it's not automatically created
+  file: path=/etc/marathon/conf state=directory mode=0755
+  sudo: yes
+
+- name: Set Marathon Master hostname
+  copy:
+    content: "{{ansible_eth0.ipv4.address}}"
+    dest: /etc/marathon/conf/hostname
+    mode: 0644
+  sudo: yes
+
+- name: Set Mesos Master quorum count
+  copy:
+    content: "{{mesos_quorum_count}}"
+    dest: /etc/mesos-master/quorum
+    mode: 0644
+  sudo: yes
+
+- name: Stop Slave Service (if started)
+  service: name=mesos-slave state=stopped
+
+- name: Disable the Mesos Slave service
+  copy:
+    content: "manual"
+    dest: /etc/init/mesos-slave.override
+    mode: 0644
+  sudo: yes
+
+- name: Install ZooKeeper package
+  apt: pkg=zookeeper state=present update_cache=yes
+  sudo: yes
+
+- name: Create zookeeper myid file
+  copy:
+    content: src="{{zoo_id}}"
+    dest: /etc/zookeeper/conf/myid
+  sudo: yes
+
+- name: Create zookeeper config file
+  template: src=zoo.cfg.j2 dest=/etc/zookeeper/conf/zoo.cfg
+  sudo: yes
+
+- name: Set ZooKeeper URL # used for leader election amongst masters
+  copy:
+    content: "{{zookeeper_url}}"
+    dest: /etc/mesos/zk
+    mode: 0644
+  sudo: yes
+
+- name: Restart Zookeeper Service
+  service: name=zookeeper state=restarted
+  sudo: yes
+
+- name: Restart Mesos Master Service
+  service: name=mesos-master state=restarted
+  sudo: yes
+
+- name: Restart Marathon Service
+  service: name=marathon state=restarted
+  sudo: yes
+
+- name: Restart Chronos Service
+  service: name=chronos state=restarted
+  sudo: yes
+
+
+
+
+
+
