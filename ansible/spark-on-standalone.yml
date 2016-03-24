@@ -1,0 +1,29 @@
+---
+# This script will install an HDFS cluster and Spark cluster for use in Stand-Alone Cluster manager
+# To validate it's success, browse to http://<master host>:8080 and verify that there are 3 Worker nodes
+# For HDFS, browse to http://<master host>:50070 and verify that there are 3 data nodes
+
+- hosts: master
+  sudo: yes
+  roles:
+    - ssh
+    - java
+    - hadoop
+    - hadoop-namenode
+    - spark
+    - sparkmaster
+
+
+- hosts: workers
+  sudo: yes
+  roles:
+    - ssh
+    - java
+    - hadoop
+    - hadoop-datanode
+    - spark
+    - { role: sparkslave, master_ip: "{{hostvars['master']['internal_ip']}}" }
+
+
+
+

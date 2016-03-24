@@ -1,0 +1,8 @@
+hadoop_dist: hadoop-2.6.0
+hadoop_download: "http://apache.mirror.gtcomm.net/hadoop/common/hadoop-2.6.0/{{hadoop_dist}}.tar.gz"
+#hadoop_home: "{{home_dir}}/hadoop-2.6.0"
+hadoop_home: "/home/hadoop"
+hadoop_install: "/usr/local/hadoop"
+hadoop_conf_dir: "{{hadoop_install}}/etc/hadoop"
+hadoop_user: "hadoop"
+hadoop_group: "hadoop"

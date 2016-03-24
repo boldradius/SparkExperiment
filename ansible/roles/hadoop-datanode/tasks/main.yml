@@ -1,7 +1,8 @@
+#All should be run as sudo
 - name: Stop Hadoop DataNode daemon if not already started
-  command: "{{hadoop_home}}/sbin/hadoop-daemon.sh --config {{hadoop_conf_dir}} --script hdfs stop datanode"
+  command: "{{hadoop_install}}/sbin/hadoop-daemon.sh --config {{hadoop_conf_dir}} --script hdfs stop datanode"
 
 - name: Launch Hadoop DataNode daemon
-  command: "{{hadoop_home}}/sbin/hadoop-daemon.sh --config {{hadoop_conf_dir}} --script hdfs start datanode"
+  command: "{{hadoop_install}}/sbin/hadoop-daemon.sh --config {{hadoop_conf_dir}} --script hdfs start datanode"
 
 

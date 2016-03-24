@@ -1,0 +1,43 @@
+#This implements the common build and install instructions from http://mesos.apache.org/gettingstarted/
+#Note: I abandon this method due to the long build time. It may be necessary if you want to tweak Mesos configurations though.
+
+- name: Install Utility tools
+  apt: pkg={{ item }} state=present update_cache=yes
+  with_items:
+    - wget
+    - tar
+    - git
+    - htop
+    - unzip
+  sudo: yes
+
+- name: Install Mesos dependencies
+  apt: pkg={{ item }} state=present update_cache=yes
+  with_items:
+    - build-essential
+    - python-dev
+    - python-boto
+    - libcurl4-nss-dev
+    - libsasl2-dev
+    - maven
+    - libapr1-dev
+    - libsvn-dev
+  sudo: yes
+
+- name: Download Mesos distribution
+  get_url: url="{{mesos_dist_url}}" dest="{{mesos_home}}.tar.gz"
+
+- name: Unzip mesos distribution package
+  unarchive: copy=no src="{{mesos_home}}.tar.gz"  dest={{home_dir}}
+
+- name: Create Mesos build directory
+  file: path="{{mesos_home}}/build" state=directory mode=0755
+
+- name: Configure Mesos
+  command: ../configure chdir="{{mesos_home}}/build"
+
+- name: Build Mesos - this takes a LONG time to run (> 1 hour..possibly multiple hours)
+  command: make V=0 chdir="{{mesos_home}}/build"
+
+- name: Make Check Mesos
+  command: make check chdir="{{mesos_home}}/build"

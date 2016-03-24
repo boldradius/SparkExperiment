@@ -10,7 +10,12 @@
   command: "{{spark_home}}/sbin/start-master.sh"
 
 - name: Creates spark-events directory
-  file: path=/tmp/spark-events state=directory
+  file: path=/tmp/spark-events state=directory owner=ubuntu
+
+- name: Start MesosClusterDispatch so that we can run in Cluster mode
+  command: "{{spark_home}}/sbin/start-mesos-dispatcher.sh --master mesos://{{ansible_eth0.ipv4.address}}:5050"
+  when: isMesosMaster is defined
+
 
 # The other way of starting slaves - via the Spark Scripts. Favour not doing this.
 #- name: Add slaves to conf file

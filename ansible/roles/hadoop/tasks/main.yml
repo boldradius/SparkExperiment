@@ -1,16 +1,29 @@
+#All should be run as sudo
 #This sets up HDFS to run in pseudo distributed mode (multiple JVM processes on one node)
 
 - name: Install rysnc if not present
   apt: name=rsync state=present
 
+- name: Create hadoop group
+  group: name={{ hadoop_group}} state=present
+
+- name: Create hadoop user
+  user: name={{ hadoop_user }} group={{ hadoop_group}} shell=/bin/bash
+
 - name: download hadoop
-  get_url: url="{{hadoop_download}}"  dest="{{hadoop_home}}.tar.gz"
+  get_url: url="{{hadoop_download}}"  dest=/usr/local
 
 - name: unzip hadoop
-  unarchive: copy=no src="{{hadoop_home}}.tar.gz"  dest={{home_dir}}
+  unarchive: copy=no src="/usr/local/{{hadoop_dist}}.tar.gz" dest=/usr/local owner={{hadoop_user}} group={{hadoop_group}}
+
+- command: mv /usr/local/{{hadoop_dist}} /usr/local/hadoop creates=/usr/local/hadoop removes=/usr/local/{{hadoop_dist}}
+
+- lineinfile: dest={{hadoop_home}}/.bashrc regexp="HADOOP_HOME=" line="export HADOOP_HOME={{hadoop_install}}"
+- lineinfile: dest={{hadoop_home}}/.bashrc regexp="PATH=" line="export PATH=$PATH:$HADOOP_HOME/bin"
+- lineinfile: dest={{hadoop_home}}/.bashrc regexp="HADOOP_SSH_OPTS=" line="export HADOOP_SSH_OPTS=\"-i /home/{{ hadoop_user }}/.ssh/hadoop_rsa\""
 
 - name: Set hadoop environment variables
-  lineinfile: dest=~/.profile line="{{item}}" insertafter=EOF
+  lineinfile: dest={{ubuntu_home}}/.profile line="{{item}}" insertafter=EOF
   with_items:
    - "### HADOOP Variables ###"
    - "export HADOOP_HOME={{hadoop_home}}"
@@ -27,26 +40,26 @@
 ##- name: Creates hadoop storage directories
 ##  file: path="{{item}}" state=directory
 ##  with_items:
-##   - ~/data/hadoop-data/nn
-##   - ~/data/hadoop-data/snn
-##   - ~/data/hadoop-data/dn
-##   - ~/data/hadoop-data/mapred/system
-##   - ~/data/hadoop-data/mapred/local
+##   - {{hadoop_home}}/data/hadoop-data/nn
+##   - {{hadoop_home}}/data/hadoop-data/snn
+##   - {{hadoop_home}}/data/hadoop-data/dn
+##   - {{hadoop_home}}/data/hadoop-data/mapred/system
+##   - {{hadoop_home}}/data/hadoop-data/mapred/local
 #
 - name: Set JAVA_HOME in Hadoop configuration file
-  replace: dest="{{hadoop_home}}/etc/hadoop/hadoop-env.sh" regexp='\${JAVA_HOME}' replace={{java_home}}
+  replace: dest="{{hadoop_install}}/etc/hadoop/hadoop-env.sh" regexp='\${JAVA_HOME}' replace={{java_home}}
 
 - name: Setup core-site.xml file
-  copy: src=core-site.xml dest="{{hadoop_home}}/etc/hadoop/core-site.xml" force=yes
+  copy: src=core-site.xml dest="{{hadoop_install}}/etc/hadoop/core-site.xml" force=yes
 
 - name: Set master hostname in core-site.xml
-  replace: dest="{{hadoop_home}}/etc/hadoop/core-site.xml" regexp='masterhost' replace="{{hostvars['master']['internal_ip']}}"
+  replace: dest="{{hadoop_install}}/etc/hadoop/core-site.xml" regexp='masterhost' replace="{{hostvars['master']['internal_ip']}}"
 
 - name: Setup mapred-site.xml file
-  copy: src=hdfs-site.xml dest="{{hadoop_home}}/etc/hadoop/mapred-site.xml" force=yes
+  copy: src=hdfs-site.xml dest="{{hadoop_install}}/etc/hadoop/mapred-site.xml" force=yes
 
 - name: Setup yarn-site.xml file
-  copy: src=yarn-site.xml dest="{{hadoop_home}}/etc/hadoop/yarn-site.xml" force=yes
+  copy: src=yarn-site.xml dest="{{hadoop_install}}/etc/hadoop/yarn-site.xml" force=yes
 
 - name: Set yarnlogserver in yarn-site.xml
-  replace: dest="{{hadoop_home}}/etc/hadoop/yarn-site.xml" regexp='yarnlogserver' replace="{{hostvars['master']['internal_ip']}}"
+  replace: dest="{{hadoop_install}}/etc/hadoop/yarn-site.xml" regexp='yarnlogserver' replace="{{hostvars['master']['internal_ip']}}"

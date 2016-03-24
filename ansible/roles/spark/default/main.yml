@@ -1,0 +1,2 @@
+spark_dist: spark-1.6.0-bin-hadoop2.6
+spark_download: http://apache.mirror.gtcomm.net/spark/spark-1.6.0/{{spark_dist}}.tgz

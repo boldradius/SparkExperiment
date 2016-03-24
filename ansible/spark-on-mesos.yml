@@ -1,0 +1,37 @@
+---
+# This script will install an HDFS cluster and Spark cluster using Yarn for Scheduling
+# To validate it's success, browse to http://<master host>:5050 and verify that there are 3 Slaves
+# For HDFS, browse to http://<master host>:50070 and verify that there are 3 data nodes
+# Note: Spark job details will be available at http://<master host>:18080 after they've completed
+
+- hosts: master
+  sudo: yes
+  roles:
+    - ssh
+    - java
+    - hadoop
+    - hadoop-namenode
+    - mesos
+    - mesos-master
+    - role: spark
+    - { role: sparkmaster, isMesosMaster: true }
+    - sparkhistory
+    - mapred-history #Doesn't seem to be required
+
+
+- hosts: workers
+  sudo: yes
+  roles:
+    - ssh
+    - java
+    - hadoop
+    - hadoop-datanode
+    - mesos
+    - mesos-slave
+    - spark
+    - { role: sparkslave, master_ip: "{{hostvars['master']['internal_ip']}}" }
+
+
+
+
+

@@ -1,5 +1,22 @@
+#Should be run as sudo
+
 - name: download spark
-  get_url: url="{{spark_download}}"  dest="{{spark_home}}.tgz"
+  get_url: url="{{spark_download}}"  dest=/usr/local
 
 - name: unzip spark
-  unarchive: copy=no src="{{spark_home}}.tgz"  dest={{home_dir}}
+  unarchive: copy=no src="/usr/local/{{spark_dist}}.tgz"  dest=/usr/local
+
+- command: mv /usr/local/{{spark_dist}} {{spark_home}} creates={{spark_home}} removes=/usr/local/{{spark_dist}}
+
+- name: Set the SPARK_PUBLIC_DNS configuration so that links in Spark web console use the public IP
+  lineinfile: dest="{{spark_home}}/conf/spark-env.sh" line="export SPARK_PUBLIC_DNS={{ansible_ssh_host}}" state=present create=yes
+
+- name: Make Spark owned by user Ubuntu (you may want to create a Spark user for a more advanced/secure installation as we did for Hadoop)
+  command: chown -R ubuntu:ubuntu /usr/local/spark
+
+- name: Set Spark environment variables for user Ubuntu
+  lineinfile: dest={{ubuntu_home}}/.profile line="{{item}}" insertafter=EOF
+  with_items:
+   - "### Spark Variables ###"
+   - "export SPARK_HOME={{spark_home}}"
+   - "export PATH=$PATH:$SPARK_HOME/bin"

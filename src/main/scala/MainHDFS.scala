@@ -13,7 +13,7 @@ object MainHDFS extends App {
 
   implicit val sc = new SparkContext( scConf)
 
-    val hdfsPrefix: String = "hdfs://10.0.163.3:9000/user/sparkexp"
+    val hdfsPrefix: String = "hdfs://hdfs/user/sparkexp"
 
     val argz: Map[String, String] = Map("input-path" -> s"$hdfsPrefix/data/crawl",
       "output-path" -> s"$hdfsPrefix/output/inverted-index-sorted-stop-words-removed"

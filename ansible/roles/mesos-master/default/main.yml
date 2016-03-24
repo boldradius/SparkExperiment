@@ -1,0 +1,7 @@
+#Note: Mesos Masters will not run if there are less than this many Master nodes up.
+mesos_quorum_count: "1"
+
+zookeeper_client_port: "2181"
+zookeeper_leader_port: "2888"
+zookeeper_election_port: "3888"
+
