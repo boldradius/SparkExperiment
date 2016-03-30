@@ -1,19 +1,19 @@
 #All should be run as sudo
 
 - name: Format the HDFS filesystem - will timeout if it's not necessary
-  command: timeout 5s "{{hadoop_install}}/bin/hdfs namenode -format"
+  command: timeout 5s "{{hadoop_home}}/bin/hdfs namenode -format"
   ignore_errors: yes
 
 - name: Stop Hadoop NameNode daemon if already started
-  command: "{{hadoop_install}}/sbin/hadoop-daemon.sh --config {{hadoop_conf_dir}} --script hdfs stop namenode"
+  command: "{{hadoop_home}}/sbin/hadoop-daemon.sh --config {{hadoop_conf_dir}} --script hdfs stop namenode"
 
 - name: Launch Hadoop NameNode daemon
-  command: "{{hadoop_install}}/sbin/hadoop-daemon.sh --config {{hadoop_conf_dir}} --script hdfs start namenode"
+  command: "{{hadoop_home}}/sbin/hadoop-daemon.sh --config {{hadoop_conf_dir}} --script hdfs start namenode"
 
 - name: Make hdfs user directory - will fail if already exists
-  command: "{{hadoop_install}}/bin/hdfs dfs -mkdir /user"
+  command: "{{hadoop_home}}/bin/hdfs dfs -mkdir /user"
   ignore_errors: yes
 
 - name: Make hdfs directory for this user - will fail if already exists
-  command: "{{hadoop_install}}/bin/hdfs dfs -mkdir /user/sparkexp"
+  command: "{{hadoop_home}}/bin/hdfs dfs -mkdir /user/sparkexp"
   ignore_errors: yes
