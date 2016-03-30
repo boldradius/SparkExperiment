@@ -1,7 +1,7 @@
 Overview
 =========
 
-This repository contains code from experimentation done to compare different mechanisms for deploying Apache Spark in a clustered environment.
+This repository contains code from experimentation done to compare different mechanisms for deploying Apache Spark in a clustered environment. Note that these are prototype (not high-availability / production grade) scripts, and I make no commitment to keep them up to date.
 
 Ansible Scripts
 ---------------
