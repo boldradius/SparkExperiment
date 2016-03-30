@@ -1,12 +1,16 @@
 ---
 ubuntu_home: /home/ubuntu
+hadoop_user_home: /home/hadoop
 hadoop_home: /usr/local/hadoop
 spark_home: /usr/local/spark
 spark_hdfs_location: hdfs://{{hostvars['master']['ansible_eth0']['ipv4']['address']}}:9000/tmp/spark-1.6.0-bin-hadoop2.6.tgz
 
 #Implemented for Mesos only: Below is hard coded - for multiple masters need to list all applicable masters. (Ansible TBD)
 zookeeper_url: "zk://{{ hostvars['master']['ansible_eth0']['ipv4']['address']}}:{{ zookeeper_client_port }}/mesos"
+zookeeper_client_port: "2181"
+zookeeper_leader_port: "2888"
+zookeeper_election_port: "3888"
 
 spark_master_port: 7077
 spark_slave_port: 8081
-#spark_history_dir: file:/tmp/spark-events
+

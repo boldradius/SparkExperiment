@@ -12,6 +12,10 @@
 - name: Creates spark-events directory
   file: path=/tmp/spark-events state=directory owner=ubuntu
 
+- name: Stop MesosClusterDispatch if started
+  command: "{{spark_home}}/sbin/stop-mesos-dispatcher.sh --master mesos://{{ansible_eth0.ipv4.address}}:5050"
+  when: isMesosMaster is defined
+
 - name: Start MesosClusterDispatch so that we can run in Cluster mode
   command: "{{spark_home}}/sbin/start-mesos-dispatcher.sh --master mesos://{{ansible_eth0.ipv4.address}}:5050"
   when: isMesosMaster is defined

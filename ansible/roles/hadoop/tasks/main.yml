@@ -18,9 +18,9 @@
 
 - command: mv /usr/local/{{hadoop_dist}} /usr/local/hadoop creates=/usr/local/hadoop removes=/usr/local/{{hadoop_dist}}
 
-- lineinfile: dest={{hadoop_home}}/.bashrc regexp="HADOOP_HOME=" line="export HADOOP_HOME={{hadoop_install}}"
-- lineinfile: dest={{hadoop_home}}/.bashrc regexp="PATH=" line="export PATH=$PATH:$HADOOP_HOME/bin"
-- lineinfile: dest={{hadoop_home}}/.bashrc regexp="HADOOP_SSH_OPTS=" line="export HADOOP_SSH_OPTS=\"-i /home/{{ hadoop_user }}/.ssh/hadoop_rsa\""
+- lineinfile: dest={{hadoop_user_home}}/.bashrc regexp="HADOOP_HOME=" line="export HADOOP_HOME={{hadoop_install}}"
+- lineinfile: dest={{hadoop_user_home}}/.bashrc regexp="PATH=" line="export PATH=$PATH:$HADOOP_HOME/bin"
+- lineinfile: dest={{hadoop_user_home}}/.bashrc regexp="HADOOP_SSH_OPTS=" line="export HADOOP_SSH_OPTS=\"-i /home/{{ hadoop_user }}/.ssh/hadoop_rsa\""
 
 - name: Set hadoop environment variables
   lineinfile: dest={{ubuntu_home}}/.profile line="{{item}}" insertafter=EOF
